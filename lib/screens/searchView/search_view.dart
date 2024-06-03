@@ -140,7 +140,7 @@ class _SearchViewState extends State<SearchView> {
                       itemBuilder: (context, index) {
                         return GestureDetector(
                           onTap: (){
-                            Get.to(() => ProductDetailsView(title: items[index].name, productID: '',));
+                            Get.to(() => ProductDetailsView(title: items[index].name, url: items[index].link));
                           },
                           child: Container(
                             padding: EdgeInsets.symmetric(horizontal: 6.w, vertical: 5.h),

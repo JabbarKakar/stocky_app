@@ -381,7 +381,7 @@ class _HomeViewState extends State<HomeView> {
                       itemBuilder: (context, index) {
                         return GestureDetector(
                           onTap: (){
-                            Get.to(() => ProductDetailsView(title: data.searchData[index].title, productID: '',));
+                            Get.to(() => ProductDetailsView(title: data.searchData[index].title, url: '',));
                           },
                           child: Container(
                             width: 110.w,
